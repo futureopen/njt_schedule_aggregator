@@ -36,3 +36,7 @@ div.tab button.active {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+pre{
+  font-size: x-large;
+}
