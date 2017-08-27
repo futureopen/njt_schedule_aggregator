@@ -33,7 +33,7 @@ def getLatestScheduleData():
       if urlDetails:
         routeDetails = njt_scraper.getRouteDetails(urlDetails)
         routeOptions = njt_scraper.getRouteOptions(urlDetails)
-        routeHeader  = "{0} towards {1}".format(routeDetails['Selected Route'], routeDetails['Selected Direction'])
+        routeHeader  = "{0} towards {1} from {2}".format(routeDetails['Selected Route'], routeDetails['Selected Direction'], routeDetails['Selected Stop'])
         routeOptions = tabulate.tabulate(routeOptions) if routeOptions else 'No Route Options At This Time'
 
         if not direction in results:
