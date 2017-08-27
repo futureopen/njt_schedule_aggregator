@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+
+<p id="last_modified_time"></p>
+
+<div class="tab">
+  {% for direction in results.keys() %}
+    <button class="tablinks" onclick="openCity(event, '{{direction}}')">{{direction}}</button>
+  {% endfor %}
+</div>
+
+{%for direction in results.keys()%}
+  <div id="{{direction}}" class="tabcontent">
+    {%for header, njtLink, routeOptions in results[direction]%}
+        <a href={{njtLink}}>{{header}}</a>
+        <pre>{{routeOptions}}</pre>
+    {% endfor %}
+   </div>
+{% endfor %}
+
+<script src="../static/js/main.js"></script>
+     
+</body>
+</html> 
