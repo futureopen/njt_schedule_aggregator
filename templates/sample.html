@@ -16,7 +16,7 @@
 {%for direction in results.keys()%}
   <div id="{{direction}}" class="tabcontent">
     {%for header, njtLink, routeOptions in results[direction]%}
-        <h3><a href={{njtLink}}>{{header}}</a></h3>
+        <a href={{njtLink}}>{{header}}</a>
         <pre>{{routeOptions}}</pre>
     {% endfor %}
    </div>
