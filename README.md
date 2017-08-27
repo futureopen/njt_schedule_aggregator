@@ -3,3 +3,5 @@ Simple Proof Of Concept application to aggregate schedules for NJ Transit, hoste
 
 The application uses [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for web scraping and uses [Flask](http://flask.pocoo.org/) (microframework for Python)
 
+##### Sample screenshot of live app
+![](/static/img/screenshot.png)
